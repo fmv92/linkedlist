@@ -75,6 +75,16 @@ public class LinkedList {
         return temp;
     }
 
+    public void set(int index, int value) {
+        if (length > 0 && index <= length) {
+            Node temp = head;
+            for (int i = 0; i <= index; i++) {
+                if (i == index) temp.setValue(value);
+                temp = temp.getNext();
+            }
+        }
+    }
+
 
     public void printList() {
         Node temp = head;

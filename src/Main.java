@@ -5,9 +5,9 @@ public class Main {
 //        myList.append(4);
 //        myList.append(2);
 //        myList.append(1);
-//       // System.out.println(myList.removeLast().getValue());
-//        //myList.prepend(10);
-//       System.out.println("Removed first value: " + myList.removeFirst().getValue());
+//        System.out.println(myList.removeLast().getValue());
+//        myList.prepend(10);
+//        System.out.println("Removed first value: " + myList.removeFirst().getValue());
 //        System.out.println("Removed first value: " + myList.removeFirst().getValue());
 //        myList.printList();
 //        myList.getHead();
@@ -31,5 +31,14 @@ public class Main {
         getNodeList.append(8);
         getNodeList.append(10);
         System.out.println(getNodeList.get(3).getValue());
+
+        //SET
+        LinkedList setNodeList = new LinkedList(2);
+        setNodeList.append(5);
+        setNodeList.append(8);
+        setNodeList.append(10);
+        setNodeList.set(1, 15);
+        System.out.println(setNodeList.get(1).getValue());
+
     }
 }

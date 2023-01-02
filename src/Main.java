@@ -22,6 +22,7 @@ public class Main {
         System.out.println(myLinkedList.removeFirst().getValue());
         // (0) Items - Returns null
         System.out.println(myLinkedList.removeFirst());
+        
 
     }
 }

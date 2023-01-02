@@ -20,7 +20,7 @@ public class LinkedList {
 
     public void prepend(int value) {
         Node newNode = new Node(value);
-        if(length == 0) {
+        if (length == 0) {
             head = newNode;
             tail = newNode;
         } else {
@@ -31,7 +31,7 @@ public class LinkedList {
     }
 
     public Node removeLast() {
-        if(length == 0)
+        if (length == 0)
             return null;
         Node lastNode = head;
         Node prevNode = head;
@@ -42,7 +42,7 @@ public class LinkedList {
         tail = prevNode;
         tail.setNext(null);
         length--;
-        if(length == 0) {
+        if (length == 0) {
             head = null;
             tail = null;
         }
@@ -51,11 +51,11 @@ public class LinkedList {
     }
 
     public Node removeFirst() {
-        if(length == 0)  return null;
+        if (length == 0) return null;
         Node firstNode = head;
         head = head.getNext();
         length--;
-        if(length == 0) tail = null;
+        if (length == 0) tail = null;
         return firstNode;
     }
 
@@ -64,6 +64,15 @@ public class LinkedList {
         head = newNode;
         tail = newNode;
         length = 1;
+    }
+
+    public Node get(int index) {
+        if (length < 0 || index >= length) return null;
+        Node temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.getNext();
+        }
+        return temp;
     }
 
 

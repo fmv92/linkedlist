@@ -13,6 +13,8 @@ public class Main {
 //        myList.getHead();
 //        myList.getTail();
 //        myList.getLength();
+
+        //REMOVE FIRST
         LinkedList myLinkedList = new LinkedList(2);
         myLinkedList.append(1);
 
@@ -22,7 +24,12 @@ public class Main {
         System.out.println(myLinkedList.removeFirst().getValue());
         // (0) Items - Returns null
         System.out.println(myLinkedList.removeFirst());
-        
 
+        //GET
+        LinkedList getNodeList = new LinkedList(2);
+        getNodeList.append(5);
+        getNodeList.append(8);
+        getNodeList.append(10);
+        System.out.println(getNodeList.get(3).getValue());
     }
 }
